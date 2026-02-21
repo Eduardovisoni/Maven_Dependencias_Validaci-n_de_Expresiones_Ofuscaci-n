@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yguard version="1.5">
+<!--
+  yGuard Bytecode Obfuscator, v4.1.1, a Product of yWorks GmbH - http://www.yworks.com
+
+  Logfile created on Fri Feb 20 22:11:51 CST 2026
+
+  Jar file to be obfuscated:           stackHandler-1.0-SNAPSHOT.jar
+  Target Jar file for obfuscated code: stackHandler-1.0-SNAPSHOT-obf.jar
+
+-->
+<!--
+  Memory in use after class data structure built: 19443760 bytes
+  Total memory available                        : 71303168 bytes
+-->
+<expose>
+  <class name="umg.edu.gt.handler.App"/>
+  <method class="umg.edu.gt.handler.App" name="void main(java.lang.String[])"/>
+</expose>
+<map>
+</map>
+</yguard>

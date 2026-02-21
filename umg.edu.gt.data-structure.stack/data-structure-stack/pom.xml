@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>umg.edu.gt</groupId>
+  <artifactId>data-structure-stack</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>data-structure-stack</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>obfuscate</id>
+
+      <dependencies>
+        <dependency>
+          <groupId>com.yworks</groupId>
+          <artifactId>yguard</artifactId>
+          <version>4.1.1</version>
+        </dependency>
+      </dependencies>
+
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+              <execution>
+                <id>obfuscate</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <property name="runtime_classpath" refid="maven.runtime.classpath"/>
+                    <taskdef name="yguard"
+                             classname="com.yworks.yguard.YGuardTask"
+                             classpath="${runtime_classpath}"/>
+                    <yguard>
+                      <inoutpair
+                        in="${project.build.directory}/${project.build.finalName}.jar"
+                        out="${project.build.directory}/${project.build.finalName}-obf.jar"/>
+
+                      <rename>
+                        <keep>
+                          <class classes="public" methods="public" fields="public">
+                            <patternset>
+                              <include name="umg.edu.gt.data_structure.stack.SymbolValidator"/>
+                              <include name="umg.edu.gt.data_structure.stack.MyStack"/>
+                            </patternset>
+                          </class>
+                        </keep>
+                      </rename>
+
+                    </yguard>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+  </profiles>
+
+</project>

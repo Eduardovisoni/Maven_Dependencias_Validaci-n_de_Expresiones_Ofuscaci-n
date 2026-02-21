@@ -1,0 +1,10 @@
+ANÁLISIS DE INGENIERÍA INVERSA (JAR OFUSCADO)
+
+1) ¿Qué tanto se dificulta la lectura?
+Se dificulta bastante porque los nombres de paquetes y clases y métodos se reemplazan por letras o nombres genéricos, por ejemplo A.A.A.A y A. Eso elimina el significado de cada componente y obliga a buscar y encontrar la intención solo por el código
+
+2) ¿Se pierde claridad estructural?
+Sí. Aunque el programa sigue teniendo la misma lógica, se pierde la claridad de la estructura original, es decir, que clase hace que, y cómo se organizan los modulos. La navegación es menos intuitiva y se vuelve más lenta.
+
+3) ¿Sigue siendo posible entender la lógica?
+En parte.. Aún se puede suponer el comportamiento general, como por ejemplo, que valida símbolos y muestra true/false, pero entenderlo a detalle toma más tiempo y es más propenso a errores, porque no hay nombres descriptivos.

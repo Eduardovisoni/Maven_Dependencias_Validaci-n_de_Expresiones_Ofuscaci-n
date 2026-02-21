@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yguard version="1.5">
+<!--
+  yGuard Bytecode Obfuscator, v4.1.1, a Product of yWorks GmbH - http://www.yworks.com
+
+  Logfile created on Fri Feb 20 20:57:34 CST 2026
+
+  Jar file to be obfuscated:           data-structure-stack-1.0-SNAPSHOT.jar
+  Target Jar file for obfuscated code: data-structure-stack-1.0-SNAPSHOT-obf.jar
+
+-->
+<!--
+  Memory in use after class data structure built: 18591808 bytes
+  Total memory available                        : 83886080 bytes
+-->
+<expose>
+  <class name="umg.edu.gt.data_structure.stack.SymbolValidator"/>
+  <method class="umg.edu.gt.data_structure.stack.SymbolValidator" name="boolean isValid(java.lang.String)"/>
+  <class name="umg.edu.gt.data_structure.stack.MyStack"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="boolean isEmpty()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="umg.edu.gt.data_structure.stack.Node getTop()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="umg.edu.gt.data_structure.stack.Node getNodeInit()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="char peek()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="int getCount()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="char pop()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="int length()"/>
+  <method class="umg.edu.gt.data_structure.stack.MyStack" name="void push(char)"/>
+</expose>
+<map>
+  <method class="umg.edu.gt.data_structure.stack.SymbolValidator" name="boolean matches(char, char)" map="A"/>
+  <class name="umg.edu.gt.data_structure.stack.Node" map="A"/>
+  <field class="umg.edu.gt.data_structure.stack.Node" name="next" map="A"/>
+  <field class="umg.edu.gt.data_structure.stack.Node" name="data" map="B"/>
+  <method class="umg.edu.gt.data_structure.stack.Node" name="void setNext(umg.edu.gt.data_structure.stack.Node)" map="A"/>
+  <method class="umg.edu.gt.data_structure.stack.Node" name="umg.edu.gt.data_structure.stack.Node getNext()" map="A"/>
+  <method class="umg.edu.gt.data_structure.stack.Node" name="void setData(char)" map="A"/>
+  <method class="umg.edu.gt.data_structure.stack.Node" name="char getData()" map="B"/>
+  <field class="umg.edu.gt.data_structure.stack.MyStack" name="count" map="A"/>
+  <field class="umg.edu.gt.data_structure.stack.MyStack" name="top" map="B"/>
+  <class name="umg.edu.gt.App" map="A"/>
+  <method class="umg.edu.gt.App" name="void main(java.lang.String[])" map="A"/>
+</map>
+</yguard>

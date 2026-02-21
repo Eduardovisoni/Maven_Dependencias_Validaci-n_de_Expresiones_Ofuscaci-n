@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <property name="runtime_classpath" refid="maven.runtime.classpath" />
+    <taskdef classname="com.yworks.yguard.YGuardTask" classpath="${runtime_classpath}" name="yguard" />
+    <yguard>
+      <inoutpair in="C:\Users\VISONI\Desktop\friday\umg.edu.gt.data-structure.stack\data-structure-stack\target/data-structure-stack-1.0-SNAPSHOT.jar" out="C:\Users\VISONI\Desktop\friday\umg.edu.gt.data-structure.stack\data-structure-stack\target/data-structure-stack-1.0-SNAPSHOT-obf.jar" />
+      <rename>
+        <keep>
+          <class methods="public" classes="public" fields="public">
+            <patternset>
+              <include name="umg.edu.gt.data_structure.stack.SymbolValidator" />
+              <include name="umg.edu.gt.data_structure.stack.MyStack" />
+            </patternset>
+          </class>
+        </keep>
+      </rename>
+    </yguard>
+  </target>
+</project>
