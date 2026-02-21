@@ -1,6 +1,6 @@
 # Práctica: Estructura de Datos (Pila) + Ofuscación + Ingeniería Inversa
 
-## 📌 Objetivo
+## Objetivo
 
 En esta práctica se desarrollaron dos proyectos dentro del mismo
 repositorio aplicando:
@@ -16,7 +16,7 @@ repositorio aplicando:
 
 ------------------------------------------------------------------------
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
     /umg.edu.gt.data-structure.stack
     /stackHandler
@@ -31,7 +31,7 @@ repositorio aplicando:
 
 ------------------------------------------------------------------------
 
-## ⚙ Requisitos
+## Requisitos
 
 -   Java 11
 -   Maven 3.x
@@ -39,9 +39,9 @@ repositorio aplicando:
 
 ------------------------------------------------------------------------
 
-# 🧱 Parte A -- Dependencia Maven
+# Parte A -- Dependencia Maven
 
-## 1️⃣ Compilar e instalar la librería
+## 1 Compilar e instalar la librería
 
 ``` bash
 cd umg.edu.gt.data-structure.stack/data-structure-stack
@@ -53,7 +53,7 @@ Esto instala la librería en el repositorio local (\~/.m2/repository).
 
 ------------------------------------------------------------------------
 
-## 2️⃣ Compilar el proyecto handler
+## 2️ Compilar el proyecto handler
 
 ``` bash
 cd stackHandler/stackHandler
@@ -62,7 +62,7 @@ mvn clean package
 
 ------------------------------------------------------------------------
 
-# 🧠 Parte B -- Implementación Funcional
+# Parte B -- Implementación Funcional
 
 Se implementó manualmente una estructura de datos tipo **pila**, sin
 usar `java.util.Stack`.
@@ -84,7 +84,7 @@ usar `java.util.Stack`.
 
 ------------------------------------------------------------------------
 
-## ▶ Ejecutar desde consola
+## Ejecutar desde consola
 
 ``` bash
 java -cp "target/stackHandler-1.0-SNAPSHOT.jar;RUTA_A_LA_LIBRERIA_EN_.m2" umg.edu.gt.handler.App
@@ -98,7 +98,7 @@ java -cp "target/stackHandler-1.0-SNAPSHOT.jar;RUTA_A_LA_LIBRERIA_EN_.m2" umg.ed
 
 ------------------------------------------------------------------------
 
-# 🔐 Parte C -- Ofuscación Reproducible
+# Parte C -- Ofuscación Reproducible
 
 La ofuscación está configurada mediante un perfil Maven llamado:
 
@@ -127,7 +127,7 @@ Cada proyecto genera:
 
 ------------------------------------------------------------------------
 
-# 🔎 Parte D -- Ingeniería Inversa
+# Parte D -- Ingeniería Inversa
 
 Se utilizó **JD-GUI** para decompilar el JAR ofuscado.
 
@@ -144,7 +144,7 @@ El análisis detallado se encuentra en:
 
 ------------------------------------------------------------------------
 
-# 🧪 Parte E -- Prueba de Regresión
+# Parte E -- Prueba de Regresión
 
 Se ejecutó el proyecto utilizando la librería ofuscada para confirmar
 que el comportamiento no cambió:
@@ -162,7 +162,7 @@ después de la ofuscación.
 
 ------------------------------------------------------------------------
 
-## 🔎 Nota sobre la ejecución del JAR
+## Nota sobre la ejecución del JAR
 
 Para la prueba de regresión se utilizó el comando `java -cp` en lugar de
 `java -jar`, ya que el proyecto `stackHandler` depende de una librería
@@ -182,7 +182,7 @@ la ofuscación.
 
 ------------------------------------------------------------------------
 
-# 📸 Evidencias
+# Evidencias
 
 La carpeta `/evidencias` contiene:
 
@@ -195,7 +195,7 @@ La carpeta `/evidencias` contiene:
 
 ------------------------------------------------------------------------
 
-# ✅ Conclusión
+# Conclusión
 
 Se logró:
 
